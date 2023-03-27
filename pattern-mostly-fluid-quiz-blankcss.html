@@ -69,11 +69,46 @@
         width: 100%;
       }
 
-      @media screen and (max-width: 400px) {
+      @media screen and (min-width: 450px) {
         .dark_blue {
           color: blue;
+          order: 1;
+          width: 100%;
+        }
+        .light_blue {
+          order: 2;
+          width: 50%;
+        }
+        .green {
+          order: 3;
+          width: 50%;
+        }
+        .red {
+          order: 4;
+          width: 100%;
+        }
+        .orange {
+          order: 5;
+          width: 100%;
         }
       }
+      @media screen and (min-width:550px) {
+        .red {
+          width: 25%;
+    
+        }
+        .orange {
+          width: 75%;
+        }
+      }
+      @media screen and (min-width:800px) {
+        .container {
+          width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        }
+      }
+      
     </style>
   </head>
   <body>
